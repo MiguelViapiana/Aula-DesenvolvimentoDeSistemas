@@ -10,8 +10,10 @@
     $idade = 87;
     $faculdade = "ADS";
 
+    echo "<div>";
     echo "Nome: ". $nome . "<br>";
     echo "Idade: ". $idade . "<br>";
-    echo "Faculdade: ". $faculdade;
+    echo "Faculdade: ". $faculdade . "</br>";
+    echo "</div>";
 
 ?> 
