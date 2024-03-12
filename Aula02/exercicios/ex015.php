@@ -1,6 +1,12 @@
+<form action="" method="GET">
+    <label for="num">Digite um número:</label>
+    <input type="text" name="num" id="num"><br>
+    <button type="submit">Enviar</button>
+</form>
+
 <?php
 
-$num= 56;
+$num= $_GET['num'];
 $res5 = ($num/100) * 5;
 $res50 = ($num/100) * 50;
 

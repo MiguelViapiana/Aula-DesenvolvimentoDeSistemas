@@ -1,6 +1,12 @@
+<form action="" method="GET">
+    <label for="num">Digite um número:</label>
+    <input type="text" name="num" id="num"><br>
+    <button type="submit">Enviar</button>
+</form>
+
 <?php
 
-$num = 678;
+$num = $_GET['num'];
 $descFinal = $num - ($num*0.09);
 $desc =($num*0.09);
 

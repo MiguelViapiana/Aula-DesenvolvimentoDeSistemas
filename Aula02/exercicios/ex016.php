@@ -1,7 +1,15 @@
+<form action="" method="GET">
+    <label for="num">Digite um número:</label>
+    <input type="text" name="num1" id="num"><br>
+    <label for="num">Digite outro número:</label>
+    <input type="text" name="num2" id="num"><br>
+    <button type="submit">Enviar</button>
+</form>
+
 <?php
 
-$num1 =7;
-$num2 = 4;
+$num1 =$_GET['num1'];
+$num2 = $_GET['num2'];
 
 $Q1 = $num1 * $num1;
 $Q2 = $num2 * $num2;

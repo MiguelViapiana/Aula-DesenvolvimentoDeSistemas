@@ -1,8 +1,18 @@
+<form action="" method="GET">
+    <label for="num">Digite um número:</label>
+    <input type="text" name="num1" id="num"><br>
+    <label for="num">Digite outro número:</label>
+    <input type="text" name="num2" id="num"><br>
+    <label for="num">Digite outro número:</label>
+    <input type="text" name="num3" id="num"><br>
+    <button type="submit">Enviar</button>
+</form>
+
 <?php
 
-$vel1 =4;
-$vel2 = 7;
-$vel3 =5;
+$vel1 =$_GET['num1'];
+$vel2 = $_GET['num2'];
+$vel3 =$_GET['num3'];
 
 $media = ($vel1 + $vel2 + $vel3)/3;
 $media = number_format($media, 2);

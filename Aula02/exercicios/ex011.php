@@ -1,6 +1,12 @@
+<form action="" method="GET">
+    <label for="num">Digite a sua altura</label>
+    <input type="text" name="altura" id="num"><br>
+    <button type="submit">Enviar</button>
+</form>
+
 <?php
 
-$altura = 1.80;
+$altura = $_GET['altura'];
 $peso_idealM = (72.7 * $altura) - 58;
 $peso_idealF = (62.1 * $altura) - 44.7;
 
