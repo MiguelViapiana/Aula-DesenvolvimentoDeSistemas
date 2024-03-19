@@ -40,5 +40,60 @@
     }while($var < 100);
 
     ?>
+
+
+    <h2>LISTA / ARRAY</h2>
+    <?php
+
+    $comidas = array('Batata', 'Miojo', 'Polenta');
+    echo print_r($comidas);
+    echo "<br>".$comidas[2];
+
+    $comidas[3] = "Arroz";
+    //$comidas[] = 30.5;
+    //$comidas[] =true;
+    $comidas[4] = "Feijão";
+    echo print_r($comidas);
+
+    $total_Comidas = count($comidas);
+    echo "<br>Total: {$total_Comidas}";
+
+    //for ($i=0; $i < $total_Comidas; $i++) { 
+      //  echo "<li> Item: {$i} -". $comidas[$i]; 
+    //}
+    echo "<h4>Lista de compra: </h4>";
+    foreach($comidas as $comida){
+        echo "<li> Item -". $comida;
+    }
+
+    echo"<h4>Array com índice str:  </h4>";
+    $pessoa = array("nome" => "Luan", "idade" => 19, "Estado" => "Feliz :D");
+    echo $pessoa["nome"]."<br>";
+    echo $pessoa["idade"]."<br>";
+    echo $pessoa["Estado"]."<br>";
+
+    foreach($pessoa as $chave => $valor){
+        echo "<li>{$chave} - {$valor}";
+    }
+
+    echo"<h4>Array de Array: </h4>";
+    $varias_pessoas = array(
+        array("nome" => "Luan", "idade" => 19, "Estado" => "Feliz :D"),
+        array("nome" => "Maria", "idade" => 23, "Estado" => "Cansada ;/"),
+        array("nome" => "João", "idade" => 30, "Estado" => "Triste :C")
+    );
+    echo print_r($varias_pessoas);
+    echo"<br><br>";
+
+    for ($i=0; $i < count($varias_pessoas); $i++) { 
+        echo "<br>Uma Pessoa:";
+        echo print_r($varias_pessoas[ $i ]);
+
+        foreach($varias_pessoas[$i] as $chave => $valor){
+            echo "<li> {$chave} = {$valor}<br>";
+        }
+    }
+
+    ?>
 </body>
 </html>
