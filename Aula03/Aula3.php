@@ -59,10 +59,7 @@
     echo"<br>";
     echo"<br>-". $var;
     echo"<br>-". $janela;
-
-
-
-
     echo"</p>";
+
 
 ?>
