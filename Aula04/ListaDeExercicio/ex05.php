@@ -2,15 +2,16 @@
     <label for="num">Digite um número para a tabuada:</label>
     <input type="text" name="num" id="num">
     <button type="submit">Enviar</button>
-</form
+</form>
 
 <?php
 
     $num = $_GET['num'];
     $resultado;
+    echo "Tabuada do $num<br>";
     for( $i=0; $i<11; $i++){
         $resultado = $num * $i;
-        echo "$num X $i = $resultado";
+        echo "| $num X $i = $resultado <br>";
     }
 
 ?>
