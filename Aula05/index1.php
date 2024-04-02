@@ -1,6 +1,6 @@
 <?php
 
-    declare(strict_types = 1);
+declare(strict_types=1);
 
 function nomeBonito()
 {
@@ -90,8 +90,6 @@ function naoFacoIdea()
 {
 
     echo "<br> não sei";
-
-    
 }
 naoFacoIdea();
 
@@ -104,10 +102,11 @@ $var1 = 10;
 echo "<br> var 1 - {$var1}";
 petersoma($var1);
 echo "<br> var 1 - {$var1}";
-echo"<br><br>";
+echo "<br><br>";
 
 
-function subtração($a=10, $b=5){
+function subtração($a = 10, $b = 5)
+{
     $sub = $a - $b;
     echo "<li> {$a} - {$b} = {$sub}";
 }
@@ -115,29 +114,32 @@ subtração();
 subtração(50);
 subtração(74, 4);
 
-echo"<br><br>";
+echo "<br><br>";
 
-function divisão(float $num1,  float $num2){
+function divisão(float $num1,  float $num2)
+{
     echo var_dump($num1);
     echo var_dump($num2);
     $res = $num1 / $num2;
     return $res;
 }
 $div = divisão(40, 5);
-echo "Contar: ". $div;
+echo "Contar: " . $div;
 
-function comida(){
+function comida()
+{
     echo "<br>Estou com fome";
 }
 
 $fome = "comida";
 $fome();
 
-function conta($a, $b, &$resposta){
+function conta($a, $b, &$resposta)
+{
     $resposta = $a + $b;
 }
 
-$resp =0;
+$resp = 0;
 conta(33, 6, $resp);
 
-echo"<br>Resposta: ".  $resp;
+echo "<br>Resposta: " .  $resp;
