@@ -23,5 +23,21 @@
 
     </form>
 </body>
+<?php
+    include "funcoes.php";
+
+    $nome = $_GET["nome"];
+    $email = $_GET["email"];
+    $senha = $_GET["senha"];
+
+    if(validarNome($nome) && validarEmail($email) && validarSenha($senha)){
+        header("Location: suscesso.php");
+        exit();
+    }else{
+        header("Location: erro.php?mensagem=Preencha todos os campos corretamente.");
+        exit();
+    }
+
+?>
 
 </html>
