@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <h1>Registro de Usuário</h1>
     <form action="resposta.php" method="get">
 
         <label for="">Nome: </label>
