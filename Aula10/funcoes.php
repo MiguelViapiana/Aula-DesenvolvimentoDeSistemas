@@ -10,4 +10,12 @@ function formulario($metodo, ...$form){
     echo "</form>";
 }
 
+function voltarLogin(){
+    echo "<form action\"\" method = \"post\">";
+    echo "<label for \"voltar\">Voltar</label>";
+    echo "<input type =\"submit\" name=\"voltar\" value =\"Voltar\"><br> ";
+    echo "</form>";
+}
+
+
 ?>
