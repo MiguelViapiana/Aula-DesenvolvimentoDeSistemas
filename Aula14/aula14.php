@@ -34,7 +34,7 @@
 
         require_once "banco.php";
 
-        $q = "SELECT * FROM peca";
+        $q = "SELECT * FROM pecas";
         $busca = $banco->query($q);
         // echo print_r($busca);
 
@@ -54,21 +54,23 @@
                 <th>COD</th>
                 <th>NOME</th>
                 <th>MARCA</th>
+                <th>EDITAR</th>
             </tr>
             
             <?php 
                 while($obj = $busca->fetch_object()){
                     echo "<tr>";
-                    echo "<td>" . $obj->id . "</td>";
+                    echo "<td>" . $obj->cod . "</td>";
                     echo "<td>" . $obj->nome . "</td>";
                     echo "<td>" . $obj->marca . "</td>";
+                    echo "<td> <a href=\"editar.php?p=$obj->cod\">editar</a> </td>";
                     echo "</tr>";
                 }
             ?>
         </table>
     </div>
 
-    <!-- <br><div style="width: 50%;">
+     <!-- <br><div style="width: 50%;">
         <table>
             <tr>
                 <th>COD</th>
@@ -84,7 +86,7 @@
                 }
             ?>
         </table>
-    </div> -->
+    </div>  -->
 
 </body>
 </html>
