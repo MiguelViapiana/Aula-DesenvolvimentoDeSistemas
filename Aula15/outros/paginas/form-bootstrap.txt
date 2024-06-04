@@ -1,0 +1,19 @@
+ <div class="container bg-dark text-white rounded p-3 mt-5">
+
+        <h1>Fazer Login</h1>
+
+        <form action="" method="post">
+            <div class="mb-3">
+                <label class="form-label">Email address</label>
+                <input type="text" name="usuario" class="form-control" >
+                <div class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" name="senha" class="form-control">
+            </div>
+            <p> <?= $resp ?> </p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+    </div>

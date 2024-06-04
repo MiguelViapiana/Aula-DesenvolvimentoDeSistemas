@@ -29,8 +29,10 @@
 
     function createOnDb($into, $values){
         global $banco;
-        $q = "INSERT INTO $into VALUES $values";
-
+        // Modificamos a construção da query para garantir que as colunas sejam especificadas
+        
+        $q = "INSERT INTO $into SET $values";
+    
         $resp = $banco->query($q);
         echo "<br> Query: $q";
         echo var_dump($resp);
